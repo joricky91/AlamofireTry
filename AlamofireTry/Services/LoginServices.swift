@@ -9,9 +9,9 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 
-class NetworkService {
+class LoginServices {
     
-    static let shared = NetworkService()
+    static let shared = LoginServices()
     
     func loginUser(username: String, password: String, completion: @escaping (_ data: User) -> Void) {
         let baseURL = "https://dummyjson.com/auth/login"
