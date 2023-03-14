@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var vm = UserViewModel()
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -19,6 +21,9 @@ struct ContentView: View {
                 .fontWeight(.semibold)
         }
         .padding()
+        .onAppear {
+            vm.login()
+        }
     }
 }
 

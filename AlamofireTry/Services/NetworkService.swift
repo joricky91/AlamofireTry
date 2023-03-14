@@ -11,6 +11,8 @@ import SwiftyJSON
 
 class NetworkService {
     
+    static let shared = NetworkService()
+    
     func loginUser(username: String, password: String, completion: @escaping (_ data: User) -> Void) {
         let baseURL = "https://dummyjson.com/auth/login"
         let headers: HTTPHeaders = ["Content-Type": "application/json"]
