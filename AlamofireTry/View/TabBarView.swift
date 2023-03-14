@@ -22,6 +22,7 @@ struct TabBarView: View {
                     Label("Profile", systemImage: "person")
                 }
         }
+        .navigationBarBackButtonHidden(true)
     }
 }
 
