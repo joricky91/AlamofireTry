@@ -16,24 +16,26 @@ struct UserListView: View {
                 ProgressView()
             } else {
                 List(vm.users) { user in
-                    HStack {
-                        AsyncImage(url: URL(string: user.image), content: { image in
-                                image
-                                .resizable()
-                                .frame(width: 30, height: 30)
-                            },
-                            placeholder: {
-                                ProgressView()
-                            }
-                        )
-                        .clipShape(Circle())
-                        
-                        VStack(alignment: .leading) {
-                            Text("\(user.firstName) \(user.lastName)")
-                                .font(.title3)
-                                .fontWeight(.semibold)
+                    NavigationLink(destination: UserDetailsView(vm: UserViewModel(), currentUserID: user.id)) {
+                        HStack {
+                            AsyncImage(url: URL(string: user.image), content: { image in
+                                    image
+                                    .resizable()
+                                    .frame(width: 30, height: 30)
+                                },
+                                placeholder: {
+                                    ProgressView()
+                                }
+                            )
+                            .clipShape(Circle())
                             
-                            Text("\(user.age)")
+                            VStack(alignment: .leading) {
+                                Text("\(user.firstName) \(user.lastName)")
+                                    .font(.title3)
+                                    .fontWeight(.semibold)
+                                
+                                Text("\(user.age)")
+                            }
                         }
                     }
                 }
