@@ -31,4 +31,23 @@ class UserService {
         }
     }
     
+    func getUserDetails(userID: Int, completion: @escaping (_ data: User) -> Void) {
+        let baseURL = "https://dummyjson.com/users/"
+        let url = "\(baseURL)\(userID)"
+        let headers: HTTPHeaders = ["Content-Type": "application/json"]
+        
+        AF.request(url, method: .get, headers: headers).responseJSON { response in
+            do {
+                var userData: User?
+                if response.response?.statusCode == 200 {
+                    userData = try JSONDecoder().decode(User.self, from: response.data ?? Data())
+                    guard let user = userData else { return }
+                    completion(user)
+                }
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
+    }
+    
 }
