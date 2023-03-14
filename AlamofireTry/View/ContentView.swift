@@ -24,7 +24,7 @@ struct ContentView: View {
                     .padding(.bottom)
                     .textInputAutocapitalization(.never)
                 
-                NavigationLink(destination: UserListView(vm: vm), isActive: $isActive, label: {
+                NavigationLink(destination: TabBarView(vm: vm), isActive: $isActive, label: {
                     Button {
                         vm.login(username: username, password: password)
                         isActive = true

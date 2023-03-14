@@ -20,6 +20,8 @@
 		5190C24E29C04A2F0090DE30 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5190C24D29C04A2F0090DE30 /* UserService.swift */; };
 		5190C25029C04B6F0090DE30 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5190C24F29C04B6F0090DE30 /* User.swift */; };
 		5190C25229C053F70090DE30 /* UserDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5190C25129C053F70090DE30 /* UserDetailsView.swift */; };
+		5190C25829C05F630090DE30 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5190C25729C05F630090DE30 /* UserProfileView.swift */; };
+		5190C25A29C05F920090DE30 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5190C25929C05F920090DE30 /* TabBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		5190C24D29C04A2F0090DE30 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		5190C24F29C04B6F0090DE30 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5190C25129C053F70090DE30 /* UserDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsView.swift; sourceTree = "<group>"; };
+		5190C25729C05F630090DE30 /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
+		5190C25929C05F920090DE30 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				5190C22F29C021EF0090DE30 /* ContentView.swift */,
 				5190C24B29C030250090DE30 /* UserListView.swift */,
 				5190C25129C053F70090DE30 /* UserDetailsView.swift */,
+				5190C25729C05F630090DE30 /* UserProfileView.swift */,
+				5190C25929C05F920090DE30 /* TabBarView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -203,10 +209,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5190C24E29C04A2F0090DE30 /* UserService.swift in Sources */,
+				5190C25A29C05F920090DE30 /* TabBarView.swift in Sources */,
 				5190C24829C0275E0090DE30 /* UserLogin.swift in Sources */,
 				5190C24C29C030250090DE30 /* UserListView.swift in Sources */,
 				5190C23029C021EF0090DE30 /* ContentView.swift in Sources */,
 				5190C25229C053F70090DE30 /* UserDetailsView.swift in Sources */,
+				5190C25829C05F630090DE30 /* UserProfileView.swift in Sources */,
 				5190C25029C04B6F0090DE30 /* User.swift in Sources */,
 				5190C24629C027070090DE30 /* LoginServices.swift in Sources */,
 				5190C24A29C02B170090DE30 /* UserViewModel.swift in Sources */,
