@@ -11,8 +11,8 @@ class UserViewModel: ObservableObject {
     
     @Published var user: User?
     
-    func login() {
-        NetworkService.shared.loginUser(username: "kminchelle", password: "0lelplR") { [weak self] data in
+    func login(username: String, password: String) {
+        NetworkService.shared.loginUser(username: username, password: password) { [weak self] data in
             guard let self = self else { return }
             
             self.user = data

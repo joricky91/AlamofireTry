@@ -16,6 +16,7 @@
 		5190C24629C027070090DE30 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5190C24529C027070090DE30 /* NetworkService.swift */; };
 		5190C24829C0275E0090DE30 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5190C24729C0275E0090DE30 /* User.swift */; };
 		5190C24A29C02B170090DE30 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5190C24929C02B170090DE30 /* UserViewModel.swift */; };
+		5190C24C29C030250090DE30 /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5190C24B29C030250090DE30 /* UserListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		5190C24529C027070090DE30 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		5190C24729C0275E0090DE30 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5190C24929C02B170090DE30 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		5190C24B29C030250090DE30 /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +68,6 @@
 				5190C24229C026A00090DE30 /* View */,
 				5190C24129C0269A0090DE30 /* Model */,
 				5190C22D29C021EF0090DE30 /* AlamofireTryApp.swift */,
-				5190C22F29C021EF0090DE30 /* ContentView.swift */,
 				5190C23129C021F20090DE30 /* Assets.xcassets */,
 				5190C23329C021F20090DE30 /* Preview Content */,
 			);
@@ -92,6 +93,8 @@
 		5190C24229C026A00090DE30 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5190C22F29C021EF0090DE30 /* ContentView.swift */,
+				5190C24B29C030250090DE30 /* UserListView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5190C24829C0275E0090DE30 /* User.swift in Sources */,
+				5190C24C29C030250090DE30 /* UserListView.swift in Sources */,
 				5190C23029C021EF0090DE30 /* ContentView.swift in Sources */,
 				5190C24629C027070090DE30 /* NetworkService.swift in Sources */,
 				5190C24A29C02B170090DE30 /* UserViewModel.swift in Sources */,
