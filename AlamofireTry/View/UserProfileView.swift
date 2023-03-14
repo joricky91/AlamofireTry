@@ -12,9 +12,27 @@ struct UserProfileView: View {
     
     var body: some View {
         VStack {
-            Text(vm.user?.email ?? "")
+            Text("\(vm.user?.firstName ?? "") \(vm.user?.lastName ?? "")")
+                .font(.title)
+                .fontWeight(.bold)
+            
+            AsyncImage(url: URL(string: vm.user?.image ?? ""), content: { image in
+                    image
+                    .resizable()
+                    .frame(width: 100, height: 100)
+                },
+                placeholder: {
+                    ProgressView()
+                }
+            )
+            .clipShape(Circle())
+            .padding(.bottom)
+            
+            Text(vm.user?.gender ?? "")
             
             Text(vm.user?.username ?? "")
+            
+            Text(vm.user?.email ?? "")
         }
     }
 }
