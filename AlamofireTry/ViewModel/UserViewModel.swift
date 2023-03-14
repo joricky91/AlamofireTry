@@ -14,9 +14,7 @@ class UserViewModel: ObservableObject {
     func login(username: String, password: String) {
         LoginServices.shared.loginUser(username: username, password: password) { [weak self] data in
             guard let self = self else { return }
-            
             self.user = data
-            print(self.user?.username ?? "no value")
         }
     }
     
