@@ -26,15 +26,18 @@ struct UserListView: View {
                                 ProgressView()
                             }
                         )
+                        .clipShape(Circle())
                         
-                        VStack {
+                        VStack(alignment: .leading) {
                             Text("\(user.firstName) \(user.lastName)")
                                 .font(.title3)
+                                .fontWeight(.semibold)
                             
                             Text("\(user.age)")
                         }
                     }
                 }
+                .listStyle(.plain)
             }
         }
         .navigationTitle("User List")

@@ -7,9 +7,14 @@
 
 import Foundation
 
-struct User: Codable {
+struct UserResponse: Codable {
+    let users: [User]
+}
+
+struct User: Codable, Identifiable {
     let id: Int
-    let username: String
-    let email: String
+    let firstName: String
+    let lastName: String
+    let age: Int
     let image: String
 }
