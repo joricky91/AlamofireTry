@@ -12,6 +12,9 @@
 		5190C23229C021F20090DE30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5190C23129C021F20090DE30 /* Assets.xcassets */; };
 		5190C23529C021F20090DE30 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5190C23429C021F20090DE30 /* Preview Assets.xcassets */; };
 		5190C23D29C022430090DE30 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 5190C23C29C022430090DE30 /* Alamofire */; };
+		5190C24029C0268C0090DE30 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 5190C23F29C0268C0090DE30 /* SwiftyJSON */; };
+		5190C24629C027070090DE30 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5190C24529C027070090DE30 /* NetworkService.swift */; };
+		5190C24829C0275E0090DE30 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5190C24729C0275E0090DE30 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,8 @@
 		5190C22F29C021EF0090DE30 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5190C23129C021F20090DE30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5190C23429C021F20090DE30 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5190C24529C027070090DE30 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		5190C24729C0275E0090DE30 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5190C24029C0268C0090DE30 /* SwiftyJSON in Frameworks */,
 				5190C23D29C022430090DE30 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -53,6 +59,10 @@
 		5190C22C29C021EF0090DE30 /* AlamofireTry */ = {
 			isa = PBXGroup;
 			children = (
+				5190C24429C026AB0090DE30 /* Services */,
+				5190C24329C026A40090DE30 /* ViewModel */,
+				5190C24229C026A00090DE30 /* View */,
+				5190C24129C0269A0090DE30 /* Model */,
 				5190C22D29C021EF0090DE30 /* AlamofireTryApp.swift */,
 				5190C22F29C021EF0090DE30 /* ContentView.swift */,
 				5190C23129C021F20090DE30 /* Assets.xcassets */,
@@ -67,6 +77,36 @@
 				5190C23429C021F20090DE30 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5190C24129C0269A0090DE30 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5190C24729C0275E0090DE30 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5190C24229C026A00090DE30 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5190C24329C026A40090DE30 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5190C24429C026AB0090DE30 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5190C24529C027070090DE30 /* NetworkService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +127,7 @@
 			name = AlamofireTry;
 			packageProductDependencies = (
 				5190C23C29C022430090DE30 /* Alamofire */,
+				5190C23F29C0268C0090DE30 /* SwiftyJSON */,
 			);
 			productName = AlamofireTry;
 			productReference = 5190C22A29C021EF0090DE30 /* AlamofireTry.app */;
@@ -118,6 +159,7 @@
 			mainGroup = 5190C22129C021EF0090DE30;
 			packageReferences = (
 				5190C23B29C022430090DE30 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				5190C23E29C0268C0090DE30 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 			);
 			productRefGroup = 5190C22B29C021EF0090DE30 /* Products */;
 			projectDirPath = "";
@@ -145,7 +187,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5190C24829C0275E0090DE30 /* User.swift in Sources */,
 				5190C23029C021EF0090DE30 /* ContentView.swift in Sources */,
+				5190C24629C027070090DE30 /* NetworkService.swift in Sources */,
 				5190C22E29C021EF0090DE30 /* AlamofireTryApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,6 +401,14 @@
 				minimumVersion = 5.6.4;
 			};
 		};
+		5190C23E29C0268C0090DE30 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -364,6 +416,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 5190C23B29C022430090DE30 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		5190C23F29C0268C0090DE30 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5190C23E29C0268C0090DE30 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
