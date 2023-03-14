@@ -11,14 +11,10 @@ struct UserProfileView: View {
     @ObservedObject var vm: UserViewModel
     
     var body: some View {
-        NavigationView {
-            VStack {
-                Text(vm.user?.email ?? "")
-                
-                Text(vm.user?.username ?? "")
-            }
-            .navigationTitle("Profile")
-            .navigationBarTitleDisplayMode(.large)
+        VStack {
+            Text(vm.user?.email ?? "")
+            
+            Text(vm.user?.username ?? "")
         }
     }
 }
