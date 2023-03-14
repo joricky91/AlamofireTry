@@ -11,6 +11,8 @@ Tech Stack:
 - SwiftUI
 - MVVM Design Pattern
 - Alamofire
+- SwiftyJSON
+- Swift Package Manager (for adding Alamofire and SwiftyJSON dependencies)
 
 I encountered some problems in this project. The problem is about Tab Bar, because it's still around when I navigate to another view, and I tried to wrap the TabView with NavigationView, but now the navigationTitle on each view won't show up. The solution I come up with is:
 ```swift
