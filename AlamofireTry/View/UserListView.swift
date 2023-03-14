@@ -11,14 +11,37 @@ struct UserListView: View {
     @ObservedObject var vm: UserViewModel
     
     var body: some View {
-        if (vm.user?.email ?? "") != "" {
-            VStack {
-                Text(vm.user?.username ?? "")
-                
-                Text(vm.user?.email ?? "")
+        VStack {
+            if vm.users.isEmpty {
+                ProgressView()
+            } else {
+                List(vm.users) { user in
+                    HStack {
+                        AsyncImage(url: URL(string: user.image), content: { image in
+                                image
+                                .resizable()
+                                .frame(width: 30, height: 30)
+                            },
+                            placeholder: {
+                                ProgressView()
+                            }
+                        )
+                        
+                        VStack {
+                            Text("\(user.firstName) \(user.lastName)")
+                                .font(.title3)
+                            
+                            Text("\(user.age)")
+                        }
+                    }
+                }
             }
-        } else {
-            ProgressView()
+        }
+        .navigationTitle("User List")
+        .navigationBarTitleDisplayMode(.large)
+        .navigationBarBackButtonHidden(true)
+        .onAppear {
+            vm.getUsers()
         }
     }
 }

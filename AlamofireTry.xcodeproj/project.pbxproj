@@ -14,9 +14,11 @@
 		5190C23D29C022430090DE30 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 5190C23C29C022430090DE30 /* Alamofire */; };
 		5190C24029C0268C0090DE30 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 5190C23F29C0268C0090DE30 /* SwiftyJSON */; };
 		5190C24629C027070090DE30 /* LoginServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5190C24529C027070090DE30 /* LoginServices.swift */; };
-		5190C24829C0275E0090DE30 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5190C24729C0275E0090DE30 /* User.swift */; };
+		5190C24829C0275E0090DE30 /* UserLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5190C24729C0275E0090DE30 /* UserLogin.swift */; };
 		5190C24A29C02B170090DE30 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5190C24929C02B170090DE30 /* UserViewModel.swift */; };
 		5190C24C29C030250090DE30 /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5190C24B29C030250090DE30 /* UserListView.swift */; };
+		5190C24E29C04A2F0090DE30 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5190C24D29C04A2F0090DE30 /* UserService.swift */; };
+		5190C25029C04B6F0090DE30 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5190C24F29C04B6F0090DE30 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,9 +28,11 @@
 		5190C23129C021F20090DE30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5190C23429C021F20090DE30 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5190C24529C027070090DE30 /* LoginServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginServices.swift; sourceTree = "<group>"; };
-		5190C24729C0275E0090DE30 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5190C24729C0275E0090DE30 /* UserLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLogin.swift; sourceTree = "<group>"; };
 		5190C24929C02B170090DE30 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		5190C24B29C030250090DE30 /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
+		5190C24D29C04A2F0090DE30 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		5190C24F29C04B6F0090DE30 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +89,8 @@
 		5190C24129C0269A0090DE30 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				5190C24729C0275E0090DE30 /* User.swift */,
+				5190C24729C0275E0090DE30 /* UserLogin.swift */,
+				5190C24F29C04B6F0090DE30 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -111,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				5190C24529C027070090DE30 /* LoginServices.swift */,
+				5190C24D29C04A2F0090DE30 /* UserService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -193,9 +199,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5190C24829C0275E0090DE30 /* User.swift in Sources */,
+				5190C24E29C04A2F0090DE30 /* UserService.swift in Sources */,
+				5190C24829C0275E0090DE30 /* UserLogin.swift in Sources */,
 				5190C24C29C030250090DE30 /* UserListView.swift in Sources */,
 				5190C23029C021EF0090DE30 /* ContentView.swift in Sources */,
+				5190C25029C04B6F0090DE30 /* User.swift in Sources */,
 				5190C24629C027070090DE30 /* LoginServices.swift in Sources */,
 				5190C24A29C02B170090DE30 /* UserViewModel.swift in Sources */,
 				5190C22E29C021EF0090DE30 /* AlamofireTryApp.swift in Sources */,
