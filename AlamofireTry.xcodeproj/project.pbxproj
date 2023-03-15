@@ -104,10 +104,9 @@
 		5190C24229C026A00090DE30 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				5190C22F29C021EF0090DE30 /* ContentView.swift */,
-				5190C24B29C030250090DE30 /* UserListView.swift */,
-				5190C25129C053F70090DE30 /* UserDetailsView.swift */,
-				5190C25729C05F630090DE30 /* UserProfileView.swift */,
+				5190C25C29C159BD0090DE30 /* Login */,
+				5190C25D29C159C70090DE30 /* User List */,
+				5190C25E29C159D00090DE30 /* User Profile */,
 				5190C25929C05F920090DE30 /* TabBarView.swift */,
 			);
 			path = View;
@@ -128,6 +127,31 @@
 				5190C24D29C04A2F0090DE30 /* UserService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		5190C25C29C159BD0090DE30 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				5190C22F29C021EF0090DE30 /* ContentView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		5190C25D29C159C70090DE30 /* User List */ = {
+			isa = PBXGroup;
+			children = (
+				5190C24B29C030250090DE30 /* UserListView.swift */,
+				5190C25129C053F70090DE30 /* UserDetailsView.swift */,
+			);
+			path = "User List";
+			sourceTree = "<group>";
+		};
+		5190C25E29C159D00090DE30 /* User Profile */ = {
+			isa = PBXGroup;
+			children = (
+				5190C25729C05F630090DE30 /* UserProfileView.swift */,
+			);
+			path = "User Profile";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
