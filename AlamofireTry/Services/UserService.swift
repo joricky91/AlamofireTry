@@ -9,7 +9,7 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 
-class UserService {
+class UserService { 
     
     static let shared = UserService()
     
