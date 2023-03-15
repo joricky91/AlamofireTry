@@ -5,6 +5,7 @@ This is a project I created to try and use Alamofire, a Swift library for HTTP N
 - Display list of users
 - See every user's details
 - See user's profile from login
+- Add new user to API, but for this feature the data is static.
 
 Tech Stack:
 - Swift
