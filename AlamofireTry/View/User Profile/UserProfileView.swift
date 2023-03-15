@@ -9,6 +9,7 @@ import SwiftUI
 
 struct UserProfileView: View {
     @ObservedObject var vm: UserViewModel
+    @State var isPresented = false
     
     var body: some View {
         VStack {
@@ -33,6 +34,21 @@ struct UserProfileView: View {
             Text(vm.user?.username ?? "")
             
             Text(vm.user?.email ?? "")
+            
+            Button {
+                vm.addNewUserToAPI()
+                isPresented = true
+            } label: {
+                Text("Add New User")
+                    .foregroundColor(.white)
+                    .fontWeight(.semibold)
+                    .frame(width: 300, height: 40)
+                    .background(.primary)
+                    .cornerRadius(8)
+            }
+        }
+        .alert(isPresented: $isPresented) {
+            Alert(title: Text("Success"), message: Text("Successfully added user with name \(vm.newUser?.firstName ?? "") \(vm.newUser?.lastName ?? "")"), dismissButton: .default(Text("Ok")))
         }
     }
 }

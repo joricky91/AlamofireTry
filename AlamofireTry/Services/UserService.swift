@@ -50,4 +50,27 @@ class UserService {
         }
     }
     
+    func addNewUser(completion: @escaping (_ data: User) -> Void) {
+        let url = "https://dummyjson.com/users/add"
+        let headers: HTTPHeaders = ["Content-Type": "application/json"]
+        
+        var params: [String: AnyObject] = [:]
+        params["firstName"] = "Jonathan" as AnyObject
+        params["lastName"] = "Ricky" as AnyObject
+        params["age"] = 22 as AnyObject
+        
+        AF.request(url, method: .post, parameters: params, encoding: JSONEncoding.default, headers: headers).responseJSON { response in
+            do {
+                var newUser: User?
+                if response.response?.statusCode == 200 {
+                    newUser = try JSONDecoder().decode(User.self, from: response.data ?? Data())
+                    guard let newUserData = newUser else { return }
+                    completion(newUserData)
+                }
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
+    }
+    
 }
